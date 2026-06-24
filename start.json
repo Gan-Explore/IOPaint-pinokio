@@ -6,6 +6,9 @@
         "message": "iopaint start --model=lama --device=cpu --port=8080",
         "path": "app",
         "venv": "env",
+        "env": {
+          "PYTHONHTTPSVERIFY": "0"
+        },
         "wait": "/http:\\/\\/\\S+/"
       }
     },
