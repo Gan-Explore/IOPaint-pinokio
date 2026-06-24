@@ -3,11 +3,12 @@
     {
       "method": "shell.run",
       "params": {
-        "message": "iopaint start --model=lama --device=cpu --port=8080",
+        "message": "iopaint start --model=runwayml/stable-diffusion-inpainting --device=cpu --port=8080",
         "path": "app",
         "venv": "env",
         "env": {
-          "PYTHONHTTPSVERIFY": "0"
+          "PYTHONHTTPSVERIFY": "0",
+          "HF_HUB_DISABLE_SSL_VERIFY": "1"
         },
         "wait": "/http:\\/\\/\\S+/"
       }
