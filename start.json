@@ -3,7 +3,7 @@
     {
       "method": "shell.run",
       "params": {
-        "message": "iopaint start --model=runwayml/stable-diffusion-inpainting --device=cpu --port=8080",
+        "message": "iopaint start --model=runwayml/stable-diffusion-inpainting --device=cuda --port=8080",
         "path": "app",
         "venv": "env",
         "env": {
