@@ -1,0 +1,33 @@
+{
+  "run": [
+    {
+      "method": "shell.run",
+      "params": {
+        "message": "git clone https://github.com/Sanster/IOPaint.git app"
+      }
+    },
+    {
+      "method": "shell.run",
+      "params": {
+        "message": "pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121",
+        "path": "app",
+        "venv": "env"
+      }
+    },
+    {
+      "method": "shell.run",
+      "params": {
+        "message": "pip install iopaint",
+        "path": "app",
+        "venv": "env"
+      }
+    },
+    {
+      "method": "input",
+      "params": {
+        "title": "Installation Complete",
+        "description": "IOPaint installed! Click Start from the menu to launch."
+      }
+    }
+  ]
+}
