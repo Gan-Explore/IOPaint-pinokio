@@ -1,0 +1,19 @@
+{
+  "run": [
+    {
+      "method": "shell.run",
+      "params": {
+        "message": "iopaint start --model=lama --device=cpu --port=8080",
+        "path": "app",
+        "venv": "env",
+        "wait": "/http:\\/\\/\\S+/"
+      }
+    },
+    {
+      "method": "browser.open",
+      "params": {
+        "url": "http://localhost:8080"
+      }
+    }
+  ]
+}
